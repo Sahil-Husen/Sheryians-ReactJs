@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  /* height: 100vh; */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.song {
+  background-color: aliceblue;
+  flex-wrap: wrap;
+  color: black;
+
+  min-height: 200px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* text-align: center; */
+  align-items: flex-start;
+  padding: 5px;
+}
+.song p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font: bold;
+ 
+}
+.song button {
+  
+  margin-top: 5vh;
+}

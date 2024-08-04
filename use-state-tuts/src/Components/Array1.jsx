@@ -33,10 +33,10 @@ return (
 
     {/* Changing name or age OnClick */}
 
-    {/* <button onClick={()=>setVal(()=>val.map(item => item.name === 'wasim gandu' ? ({name:'wasim',age:30}): item))} 
+    <button onClick={()=>setVal(()=>val.map(item => item.name === 'wasim gandu' ? ({name:'wasim',age:30}): item))} 
         
         className="bg-blue-500 text-white rounded-full py-3 px-3"
-        >Click me</button> */}
+        >Click me</button>
 
     </div>
   );

@@ -12,7 +12,7 @@ function PropsCard({Values,handleClick,cardIndex}) {
       <div className="w-full p-3">
         <h3 className="text-xl font-semibold">{name}</h3>
         <h5 className="text-xs">{profession}</h5>
-        <button  onClick={()=>handleClick(cardIndex)}  className=" mt-4 py-3 px-3 bg-blue-500 text-xs text-white rounded-md">
+        <button  onClick={()=>handleClick(cardIndex)}  className={`rounded-xl  mt-4 py-3 px-3 ${friends ? 'bg-blue-500': 'bg-green-600' } text-xs text-white "`}>
          {/* Add Friend   */}
          {friends ? 'Remove Friend' :" Add friend"}
         </button>

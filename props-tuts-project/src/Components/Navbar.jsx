@@ -1,10 +1,12 @@
 import React from 'react'
+import styles from './style.module.css';
+
 
 function Navbar({data}) {
   return (
     <div className='w-full px-20 py-5 flex justify-between items-center'> 
     
-        <h3>Orange</h3>
+        <h3 className={styles.a}>Orange</h3>
 
         <div className='flex p-2 px-4 bg-orange-300 text-white rounded-md text-sm gap-2'>
             <h3>Favourites</h3>

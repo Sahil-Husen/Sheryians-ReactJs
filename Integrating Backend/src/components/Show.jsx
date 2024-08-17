@@ -1,13 +1,13 @@
-import axios from "axios";
-import { useState} from "react";
+ import axios from "../Utils/Axios";
+import { useState,useEffect} from "react";
 
 function Show() {
   const [products, setproducts] = useState([]);
 
   const getProduct = () => {
-    const api = "https://fakestoreapi.com/products";
+    // const api = "/products";
     axios
-      .get(api)
+      .get("/products")
       .then((products) => {
         console.log(products);
         setproducts(products.data);
@@ -16,29 +16,22 @@ function Show() {
         console.log(error);
       });
   };
-
-//  useEffect(() => {
-//    console.log('Show is created')
  
-//    return () => {
-//      console.log('home is deleted');
-//    }
-//  }, [])
+ useEffect(()=>{
+    // HERE I PASS MY GETpRODUCT FUNTION THAT IS CALLED WITHOUT ANY CLICK IT LOAD OUR DATA WHEN PAGE IS LOAD
+    getProduct()
+ },[])
+//  useeffect me jab square bracket pass krte hai tab ye unwanted  RENDERING KO STOP KR DETA HAI
    
 
 
   return (
-    <div>
-      <button
-        className="bg-blue-600 py-2 px-3 rouded-md text-white m-10"
-        onClick={() => getProduct()}
-      >
-        Click me
-      </button>
+    <div className="w-full h-full">
+      
       <ul>
         {products.length > 0 ? (
           products.map((p, index) => (
-            <li className="bg-zinc-300 p-5 m-5" key={index}>
+            <li className="bg-zinc-500 text-white p-5 m-5" key={index}>
               {p.title}
             </li>
           ))

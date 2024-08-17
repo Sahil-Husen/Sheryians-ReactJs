@@ -7,7 +7,8 @@ import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <>
-      <nav className="bg-zinc-100 h-20 flex justify-center item-center gap-5 " >
+     <div>
+     <nav className=" h-20 flex justify-center item-center gap-5 " >
         <Link to="/">Home</Link>
         <Link to="/Show">Show</Link>
         <Link to="/Services">Services</Link>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Show" element={<Show/>} ></Route>
         <Route path="/Services" element={<Services/>} ></Route>
       </Routes>
+     </div>
 {/* 
       <Show /> */}
     </>

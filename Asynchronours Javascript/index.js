@@ -1,3 +1,7 @@
+
+// THIS IS ALL ABOUT ASYNCHRNOUS JAVASCRIPT PART
+
+
 // fetch(`https://jsonplaceholder.typicode.com/todos`)
 //   .then((response) => response.json())
 //   .then((data) => data.forEach((e)=>console.log(e)));
